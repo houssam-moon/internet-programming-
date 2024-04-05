@@ -1,0 +1,96 @@
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        /* Header Styles */
+        header {
+            background-image: url(images.jpeg);
+            background-repeat: repeat;
+            background-position: center;
+            background-size: cover;
+            background-origin: border-box;
+            background-color: #d3f9d8; /* Light Green */
+            padding: 20px 0;
+            color: #333;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Main Content Styles */
+        #overview {
+            background-color: #f0f8ff; /* Light Blue */
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #overview p {
+            font-size: 18px;
+        }
+        /* Featured Events Styles */
+        #featured-events ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #featured-events li {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        #featured-events li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        #featured-events li h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        #featured-events li p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #d3f9d8; /* Light Green */
+            padding: 20px 0;
+            color: #333;
+            text-align: center;
+        }
+    

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        /* Header Styles */
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Main Content Styles */
+        #events {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #events ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #events li {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        #events li:hover {
+            transform: translateY(-5px);
+        }
+        #events li h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        #events li p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        #events li a {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        #events li a:hover {
+            background-color: #555;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Upcoming Events</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="events">
+                <h2>List of Upcoming Events</h2>
+                <ul>
+                    <li>
+                        <h3>Kuwait Heritage Festival</h3>
+                        <p><strong>Date:</strong> March-April</p>
+                        <p><strong>Location:</strong> Various cultural centers and heritage sites across Kuwait</p>
+                        <p><strong>Time:</strong> Throughout the day</p>
+                        <p><strong>Description:</strong> The Kuwait Heritage Festival celebrates the rich cultural heritage of Kuwait. It features traditional music, dance performances, handicraft exhibitions, and demonstrations of traditional Kuwaiti crafts such as pottery, weaving, and dhow building. Visitors can also enjoy traditional Kuwaiti cuisine.</p>
+                        <a href="#" class="event-details-link">Event details</a>
+                    </li>
+                    <li>
+                        <h3>Kuwait International Book Fair</h3>
+                        <p><strong>Date:</strong> November-December</p>
+                        <p><strong>Location:</strong> Kuwait International Fairgrounds, Mishref</p>
+                        <p><strong>Time:</strong> 9:00 AM - 9:00 PM</p>
+                        <p><strong>Description:</strong> The Kuwait International Book Fair is one of the largest cultural events in the country, attracting publishers, authors, and book enthusiasts from around the world. The fair showcases a wide range of books, including fiction, non-fiction, academic publications, and children's literature. It also features book signings, author talks, and literary workshops.</p>
+                        <a href="#" class="event-details-link">Event details</a>
+                    </li>
+                    <!-- Add more upcoming events as needed -->
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cultural Events. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to link to ed.html when event details link is clicked
+        const eventDetailsLinks = document.querySelectorAll('.event-details-link');
+        eventDetailsLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = 'ed.html';
+            });
+        });
+    </script>
+</body>
+</html>

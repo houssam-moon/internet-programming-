@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        /* Header Styles */
+        header {
+            background-color: #ffa500; /* Orange */
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+            animation: headerAnimation 1s ease-in-out infinite alternate;
+        }
+        @keyframes headerAnimation {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(5px); }
+        }
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700; /* Gold */
+        }
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+        }
+        .gallery-item {
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            display: block;
+            outline: none;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover video {
+            transform: scale(1.1);
+        }
+        .shape {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            transition: background-color 0.3s ease;
+        }
+        .gallery-item:hover .shape {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Event Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Photos</h2>
+            <div class="gallery">
+                <!-- Placeholder images, replace with actual event photos -->
+                <div class="gallery-item">
+                    <img src="https://www.kuwaitembassy.it/img/cultural/96260202.jpg" height="300" width="700" alt="Event Photo">
+                    <div class="shape"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.kuna.net.kw/NewsPictures/2021/10/6/7fa70315-dd6c-4013-bb18-28b2370fdd03.jpg"  height="300" width="300" alt="Event Photo">
+                    <div class="shape"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.kuwaitembassy.it/img/cultural/148881453.jpg"  alt="Event Photo">
+                    <div class="circle"></div>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+            <h2>Videos</h2>
+            <div class="gallery">
+                <!-- Placeholder videos, replace with actual event videos -->
+                <div class="gallery-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zf9irePxx9Q" frameborder="0" allowfullscreen></iframe>
+                    <div class="shape"></div>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zf9irePxx9Q" frameborder="0" allowfullscreen></iframe>
+                    <div class="shape"></div>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zf9irePxx9Q" frameborder="0" allowfullscreen></iframe>
+                    <div class="shape"></div>
+                </div>
+                <!-- Add more videos as needed -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cultural Events. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
